@@ -1,6 +1,6 @@
 {
   "name": "@aurimas4/tools-demo",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "main": "lib/add.js",
   "scripts": {
