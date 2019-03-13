@@ -14,3 +14,5 @@ deploy:
   skip_cleanup: true
 before_deploy:
   - cat ~/.npmrc
+after_deploy:
+  - cat ~/.npmrc
