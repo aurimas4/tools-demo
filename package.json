@@ -1,11 +1,12 @@
 {
-  "name": "tools-demo",
+  "name": "@aurimas4/tools-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:coverage": "jest --no-cache --coverage"
+    "test:coverage": "jest --no-cache --coverage",
+    "build": "babel src -d lib"
   },
   "jest": {
     "transform": {
@@ -24,8 +25,11 @@
   },
   "homepage": "https://github.com/aurimas4/tools-demo#readme",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "babel-jest": "^24.5.0",
-    "jest": "^24.5.0"
+    "jest": "^24.5.0",
+    "rimraf": "^2.6.3"
   }
 }
