@@ -1,5 +1,14 @@
 language: node_js
 node_js:
-  - "9"
+- '9'
 before_install:
-  - npm i -g npm@6.9
+- npm i -g npm@6.9
+deploy:
+  provider: packagecloud
+  repository: "DEMO"
+  username: "aurimas"
+  token:
+    secure: nRL8lh+F3+cllOpNIO/1HGvgYRANouB/T7ScpgNzE7ZaZFgNfcdvuzJcyWiFYka0BOfvdgUe5ihmQ5Gjzv8Yh2FgDV+3H0LMa/AhLN4VZ0cNQDfkorplM92LxEhgzYo5gQbzMNrNmxkubFHIXAzoBYOdeEI5Zfqsh/M5wsHBHfrOdl5dOBwbmPeb2WrUt62bYw+SiADz7CWWVfnyfD4IMmxPu/u8ewoFJN609G+gVsZwK6CIEBTBpErdWrAVThyK6883DFqDCIkz4wj2CdGWRO/KjGFVj3Ca9wiXaEAy8FKYiCr4QZqzQfR8WkFRMgpByneeO9yQQDQnVGfXvqnjUhHgTs7nWJme6Z4DxTAIDFGPJXb7CkS4vOcuXG04WntUbzrw7/rsoAl7TmU41I/9DVZ4yYZH1MJKXUcAvxoeooWL5kaRozr5xl/JeuIIgMANr9a2YCDVlb5d6kZwAb68VFuoS8LqVnBeCXwc5MUDZPDk8o+7farUrsTTAXgsOvxHiJtVXwv82eMoXZDfSqc2eIuofb4p6gBKONpQUlbo2gYckQMqyYxEx5UY72AY4Q2rD24aWoQgeZTxc26LPWLrw/iFRmv2NlrETJCucY8NSIwexZ+j2jH0RoflBySImGsRXYv4JLJWbPPFZeCpOzV25YYMXvCdSBqFOrz35ikopEA=
+  on:
+    tags: true
+    repo: aurimas4/tools-demo
