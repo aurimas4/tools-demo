@@ -12,7 +12,13 @@
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
-    }
+    },
+    "roots": [
+      "src/"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ]
   },
   "files": [
     "package.json",
