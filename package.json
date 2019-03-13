@@ -2,16 +2,25 @@
   "name": "@aurimas4/tools-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/add.js",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --no-cache --coverage",
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "prepublishOnly": "rimraf lib && npm run build"
   },
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
