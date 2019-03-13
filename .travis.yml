@@ -12,5 +12,5 @@ deploy:
     tags: true
     repo: aurimas4/tools-demo
   skip_cleanup: true
-before_deplay:
+before_deploy:
   - cat ~/.npmrc
