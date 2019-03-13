@@ -6,6 +6,6 @@ describe('add', () => {
     });
 
     test('failing test', () => {
-        expect(add(1, 3)).toStrictEqual(3);
+        expect(add(1, 3)).toStrictEqual(4);
     });
 });
