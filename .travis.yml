@@ -4,6 +4,7 @@ matrix:
     - node_js: 8
     - node_js: 9
     - node_js: 10
+      env: PUBLISH="true"
 deploy:
   provider: npm
   email: aurimas.vlcnks@gmail.com
@@ -12,4 +13,5 @@ deploy:
   on:
     tags: true
     repo: aurimas4/tools-demo
+    condition: "$PUBLISH = true"
   skip_cleanup: true
